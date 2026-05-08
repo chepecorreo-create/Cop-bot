@@ -1,0 +1,28 @@
+name: Enviar correos Copart
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # 7:00 AM El Salvador (UTC-6)
+    - cron: '0 1 * * *'    # 7:00 PM El Salvador (UTC-6)
+  workflow_dispatch:         # permite correrlo manualmente
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar bot
+        env:
+          EMAIL_ADMIN: ${{ secrets.EMAIL_ADMIN }}
+          EMAIL_ORIGEN: ${{ secrets.EMAIL_ORIGEN }}
+          SENDGRID_APIKEY: ${{ secrets.SENDGRID_APIKEY }}
+        run: python run_all.py
