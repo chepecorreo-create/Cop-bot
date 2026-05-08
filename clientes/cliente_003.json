@@ -1,0 +1,48 @@
+{
+    "id": "cliente_003",
+    "nombre": "Aldo Hernandez - Toyota Corolla CA",
+    "email_destino": "chucospanes@gmail.com",
+    "activo": true,
+    "filtros_api": {
+        "makes": ["TOYOTA", "TOYT"],
+        "models": [
+            "COROLA",
+            "COROLLA",
+            "COROLLA CROSS",
+            "COROLLA CROSS HYBRID",
+            "COROLLA HATCHBACK",
+            "COROLLA HYBRID",
+            "COROLLA IM",
+            "COROLLA L",
+            "COROLLA L 4DR",
+            "COROLLA LE",
+            "COROLLA LE 4DR",
+            "COROLLA SE",
+            "GR COROLLA"
+        ],
+        "year_min": 2018,
+        "year_max": 2027,
+        "odometer_max": 999999,
+        "locations": [
+            "CA - FRESNO",
+            "CA - LONG BEACH",
+            "CA - LOS ANGELES",
+            "CA - MARTINEZ",
+            "CA - MENTONE",
+            "CA - NAPA",
+            "CA - RANCHO CUCAMONGA",
+            "CA - SAN BERNARDINO",
+            "CA - SAN DIEGO",
+            "CA - San Jose",
+            "CA - SUN VALLEY",
+            "CA - VAN NUYS"
+        ]
+    },
+    "filtros_locales": {
+        "precio_maximo": 3000,
+        "excluir_daño": ["FLOOD", "WATER", "WATERFLOOD"],
+        "excluir_titulo": ["FLOOD", "WATER"],
+        "solo_run_and_drive": false,
+        "solo_hoy_manana": true
+    }
+}

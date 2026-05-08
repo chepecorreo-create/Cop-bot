@@ -1,0 +1,36 @@
+{
+    "id": "cliente_002",
+    "nombre": "Paolo Cevallos - Toyota Tacoma TX",
+    "email_destino": "untratoseguro@gmail.com",
+    "activo": true,
+    "filtros_api": {
+        "makes": ["TOYOTA", "TOYOTA CAMION/VAN"],
+        "models": [
+            "TACCOMA",
+            "TACOMA",
+            "TACOMA ACCESS CAB",
+            "TACOMA DOUBLE CAB"
+        ],
+        "year_min": 2018,
+        "year_max": 2027,
+        "odometer_max": 80000,
+        "locations": [
+            "TX - Andrews",
+            "TX - DALLAS",
+            "TX - DALLAS SOUTH",
+            "TX - FT. WORTH",
+            "TX - HOUSTON",
+            "TX - HOUSTON EAST",
+            "TX - NORTH AUSTIN",
+            "TX - SAN ANTONIO",
+            "TX - WACO"
+        ]
+    },
+    "filtros_locales": {
+        "precio_maximo": 7000,
+        "excluir_daño": ["FLOOD", "WATER", "WATERFLOOD", "BURN", "FIRE"],
+        "excluir_titulo": ["FLOOD", "WATER", "BURN", "FIRE"],
+        "solo_run_and_drive": false,
+        "solo_hoy_manana": true
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "id": "cliente_001",
+    "nombre": "Patricio - Mitsubishi Mirage TX",
+    "email_destino": "chepecorreo@gmail.com",
+    "activo": true,
+    "filtros_api": {
+        "makes": ["MITSUBISHI"],
+        "models": [
+            "MIRAGE",
+            "MIRAGE ES",
+            "MIRAGE ES W/CONTINUO",
+            "MIRAGE G4",
+            "MIRAGE G4 ES",
+            "MIRAGE G4 SE"
+        ],
+        "year_min": 2018,
+        "year_max": 2027,
+        "odometer_max": 80000,
+        "locations": [
+            "TX - ABILENE",
+            "TX - Corpus Christi",
+            "TX - DALLAS",
+            "TX - DALLAS SOUTH",
+            "TX - FT. WORTH",
+            "TX - HOUSTON",
+            "TX - HOUSTON EAST",
+            "TX - NORTH AUSTIN",
+            "TX - SAN ANTONIO"
+        ]
+    },
+    "filtros_locales": {
+        "precio_maximo": 0,
+        "excluir_daño": ["FLOOD", "WATER", "WATERFLOOD"],
+        "excluir_titulo": ["FLOOD", "WATER"],
+        "solo_run_and_drive": false
+    }
+}
